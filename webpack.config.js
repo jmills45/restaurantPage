@@ -6,19 +6,17 @@ module.exports = {
       entry: {
         // define templates here
         index: {
-          // => dist/index.html
-          import: 'src/index.html', // template file
+          // template file
+          import: 'src/index.html', 
         },
       },
       js: {
-        // output filename of compiled JavaScript, used if `inline` option is false (defaults)
-        filename: './scripts/main.js',
-        //inline: true, // inlines JS into HTML
+        // output filename of compiled JavaScript
+        filename: 'javascript/[name].[contenthash:8].js',
       },
       css: {
-        // output filename of extracted CSS, used if `inline` option is false (defaults)
-        filename: './style.css',
-        //inline: true, // inlines CSS into HTML
+        // output filename of extracted CSS
+        filename: 'css/[name].[contenthash:8].css',
       },
     }),
   ],
