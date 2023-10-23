@@ -45,6 +45,7 @@ footer {
 footer > img {
     height: 25px;
     width: 25px;
+    
 }
 
 .titleWrapper {
@@ -114,6 +115,7 @@ nav > div {
 }
 
 .tile {
+  
     position: relative;
     height: 200px;
     box-shadow: 0px 5px 5px 0px #000000;
@@ -122,8 +124,10 @@ nav > div {
 }
 
 .tile > img {
+    
     max-width: 100%;
     height: auto;
+
 }
 
 .tile > p {
@@ -132,6 +136,7 @@ nav > div {
     padding: 0.5em;
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
 }
 
 /* Menu Tab CSS */
@@ -161,4 +166,61 @@ nav > div {
     width: 100%;
     font-weight: 800;
     background-color: rgba(0, 0, 0, 0.50);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.contact > img {
+    max-width: 80%;
+    height: auto;
+}
+
+@media screen and (min-width: 820px){
+
+    .content {
+        align-items: center;
+    }
+    
+    main {
+        width: 80%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .hero {
+        margin: 1em;
+    }
+
+    .heroImage {
+        max-height: 50vh;
+    }
+    
+    .tileWrapper {
+        margin: 1em;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .menuWrapper {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em;
+    }
 }
